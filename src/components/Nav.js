@@ -33,6 +33,7 @@ const Nav = () => {
 export default Nav;
 
 const Wrapper = styled.section`
+  z-index: 2;
   nav {
     display: flex;
     padding: 1rem 0;

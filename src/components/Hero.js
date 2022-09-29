@@ -10,10 +10,12 @@ const Hero = () => {
       }}
     >
       <div className="welcome">
-        <h2 className="center">
+        <h3 className="center">
           Welcome to <br />
-          <span> SijaTech </span> Institute
-        </h2>
+          <h2>
+            Sija<span>Tech </span> Institute
+          </h2>
+        </h3>
         <p className="center">...embodiment of technology</p>
       </div>
     </Wrapper>
@@ -21,7 +23,6 @@ const Hero = () => {
 };
 export default Hero;
 const Wrapper = styled.div`
-  /* background: linear-gradient(to bottom red, blue); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

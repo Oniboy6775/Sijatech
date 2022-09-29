@@ -110,6 +110,7 @@ li {
 }
 .title {
   color: var(--light-red);
+  text-align: center;
 }
 .center {
   text-align: center;

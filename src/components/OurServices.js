@@ -53,7 +53,7 @@ const Wrapper = styled.section`
     svg {
       font-size: 3rem;
     }
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
       .service__text {
         text-align: center;
       }
