@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import IMG from "../images/landing.png";
 import IMG2 from "../images/landing2.png";
 const Hero = () => {
   return (
@@ -8,9 +7,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${IMG2})`,
         backgroundPosition: "fixed",
-        backdropFilter: "blur(10px)",
       }}
-      className=""
     >
       <div className="welcome">
         <h2 className="center">

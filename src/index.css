@@ -177,6 +177,6 @@ svg {
     display: none !important;
   }
   .show-big-nav {
-    display: flex;
+    display: flex !important;
   }
 }

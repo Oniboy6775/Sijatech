@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const BigNav = ({ list }) => {
   return (
-    <Wrapper>
+    <Wrapper className="show-big-nav">
       {list.map((e, index) => (
         <li
           key={index}
@@ -24,6 +24,7 @@ export default BigNav;
 const Wrapper = styled.ul`
   display: none;
   color: var(--grey-100);
+  z-index: 10;
   .active {
     border: 1px solid var(--white);
   }
