@@ -4,6 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 import BigNav from "./BigNav";
 import SmallNav from "./SmallNav";
+import LOGO from "../images/logo2.png";
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,7 +20,7 @@ const Nav = () => {
     <Wrapper className="nav">
       <nav className="container">
         <div className="logo">
-          <img src="" alt="logo" className="img" />
+          <img src={LOGO} alt="logo" width="60px" />
         </div>
         <div onClick={toggleNav} className="hamburger">
           {isNavOpen ? <FaTimes /> : <BiAlignRight />}

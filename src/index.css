@@ -64,6 +64,9 @@ body {
   background-color: var(--backgroundColor);
   color: var(--primary-500);
   font-family: var(--bodyFont);
+  /* background-image: url("./images/logo.png");
+  background-repeat: no-repeat;
+  z-index: -99; */
 }
 
 p {
@@ -154,6 +157,8 @@ li {
 .nav {
   background-color: var(--primary-800);
   color: var(--grey-100);
+  /* background-color: var(--grey-400); */
+  /* color: var(--primary-900); */
 }
 svg {
   font-size: 1.5rem;

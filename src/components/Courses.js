@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillHtml5 } from "react-icons/ai";
+import { FaNode, FaApple } from "react-icons/fa";
 import { DiCss3, DiJavascript1, DiReact } from "react-icons/di";
 
 const Courses = () => {
@@ -29,6 +30,26 @@ const Courses = () => {
         "React state management",
       ],
       icon: <DiReact />,
+    },
+    {
+      name: "Node & Express Js",
+      list: [
+        "Introduction",
+        "Routing and Error handling ",
+        "Middleware",
+        "Restful API",
+      ],
+      icon: <FaNode />,
+    },
+    {
+      name: "Mobile App development",
+      list: [
+        "Introduction",
+        "Flutter/React Native/Ionic ",
+        "Native API",
+        "Push notification",
+      ],
+      icon: <FaApple />,
     },
   ];
   return (

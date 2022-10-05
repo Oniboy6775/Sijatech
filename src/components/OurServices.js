@@ -8,17 +8,17 @@ const OurServices = () => {
   const services = [
     {
       name: "Training",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident, sed alias nisi, delectus ullam, eius sit est totam voluptatibus doloremque? Tempora fugiat ex aliquid consequuntur impedit nesciunt. Accusamus, id!",
+      text: "At SijaTech we offer varieties of programing courses covering all you need to know about developing good looking  and deliverable websites for clients and for your business ",
       icon: <TbMessage2Code />,
     },
     {
       name: "Internship",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident, sed alias nisi, delectus ullam, eius sit est totam voluptatibus doloremque? Tempora fugiat ex aliquid consequuntur impedit nesciunt. Accusamus, id!",
+      text: "We also have internship program for both advance and beginner level in programing, who is aiming to perfect his/her work for clients. These service comprises of frontend, backend and mobile app development ",
       icon: <GrCodeSandbox />,
     },
     {
       name: "Projects",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident, sed alias nisi, delectus ullam, eius sit est totam voluptatibus doloremque? Tempora fugiat ex aliquid consequuntur impedit nesciunt. Accusamus, id!",
+      text: "We help clients and business owners to build eye catchy, well looking and highly customizable websites. These include Blogs, Portfolio, Business, E-commerce, school and administrator websites.",
       icon: <HiCode />,
     },
   ];
