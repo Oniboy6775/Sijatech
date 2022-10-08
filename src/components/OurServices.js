@@ -26,7 +26,7 @@ const OurServices = () => {
     <Wrapper className="container">
       <h2 className="title center">Our services</h2>
       <div className="title-underline"></div>
-      <p className="title center">What we offer</p>
+      <h6 className="title center">What we offer</h6>
       <div className="services row">
         {services.map((service, index) => {
           const { icon, name, text } = service;
@@ -45,7 +45,9 @@ const OurServices = () => {
 
 export default OurServices;
 const Wrapper = styled.section`
+  position: relative;
   margin-top: 1rem;
+
   .service {
     padding: 0 2rem;
     text-align: center;
@@ -53,6 +55,7 @@ const Wrapper = styled.section`
     svg {
       font-size: 3rem;
     }
+
     @media (min-width: 600px) {
       .service__text {
         text-align: center;

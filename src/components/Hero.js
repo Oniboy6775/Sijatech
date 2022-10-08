@@ -1,22 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import IMG2 from "../images/landing2.png";
+import IMG from "../images/logo2.png";
+import BACKGROUND from "../images/landing2.png";
 const Hero = () => {
   return (
     <Wrapper
       style={{
-        backgroundImage: `url(${IMG2})`,
+        backgroundImage: `url(${BACKGROUND})`,
         backgroundPosition: "fixed",
       }}
     >
       <div className="welcome">
-        <h3 className="center">
+        {/* <h3 className="center">
           Welcome to <br />
           <h2>
             Sija<span>Tech </span> Institute
           </h2>
         </h3>
-        <p className="center">...embodiment of technology</p>
+        <p className="center">...embodiment of technology</p> */}
+        <img src={IMG} alt="" className="img" />
+        <h6 className="center">
+          subsidiary of Best Option Advancement LTD- RC1266325
+        </h6>
       </div>
     </Wrapper>
   );
@@ -35,6 +40,7 @@ const Wrapper = styled.div`
     opacity: 0.9;
     padding: 1rem 0.5rem;
     border-radius: var(--borderRadius);
+    max-width: 50vw;
   }
   p {
     font-size: var(--extra-small-text);

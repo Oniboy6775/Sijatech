@@ -56,12 +56,17 @@ const Courses = () => {
     <Wrapper className="container">
       <h2 className="title">Available courses</h2>
       <div className="title-underline"></div>
+      {/* <div className="stripe"> */}
+      {/* <h1 className="title">SijaTech</h1>
+        <h1 className="title">SijaTech</h1> */}
+      {/* </div> */}
       <div className="courses  row">
         {courses.map((course, index) => {
           const { icon, list, name } = course;
           return (
             <div className="course col" key={index}>
               <div className="course__icon center">{icon}</div>
+
               <h4 className="center">{name}</h4>
               <div className="course__list">
                 {list.map((e, index) => (
@@ -82,6 +87,19 @@ const Courses = () => {
 
 export default Courses;
 const Wrapper = styled.section`
+  position: relative;
+  .stripe {
+    width: 10%;
+    height: 100%;
+    background-color: var(--grey-600);
+    position: absolute;
+    /* left: 50%; */
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
+    transition: all ease-in-out 2s;
+    transform: rotate(15deg);
+  }
   .course__icon {
     color: var(--light-red);
   }
