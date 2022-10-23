@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap");
 
 * {
@@ -102,6 +105,7 @@ small,
 
 a {
   text-decoration: none;
+  text-align: center;
 }
 li {
   list-style-type: none;
@@ -114,6 +118,7 @@ li {
 .title {
   color: var(--light-red);
   text-align: center;
+  @apply font-normal;
 }
 .center {
   text-align: center;
@@ -145,6 +150,9 @@ li {
   border: 2px solid var(--primary-500);
   background-color: transparent;
   color: var(--primary-500);
+}
+.btn-transparent:hover {
+  color: var(--white);
 }
 .btn-block {
   width: 100%;

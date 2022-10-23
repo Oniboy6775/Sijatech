@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import OurServices from "./components/OurServices";
 import Courses from "./components/Courses";
+import OurTeam from "./components/OurTeam";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <OurServices />
       <Courses />
+      <OurTeam />
     </>
   );
 }
