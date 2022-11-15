@@ -17,7 +17,7 @@ const OurTeam = () => {
     },
     {
       name: "Taogeeq Afolabi",
-      position: "Senior Developer",
+      position: "HR Manager",
       image: "./images/tunde.png",
       links: [
         "https://m.facebook.com/afolabi.babatunde.100?eav=AfZdAjqSSRBIa4W3meBFJOWqHLoMUd92u48jMedac07GUdm_K9DOmmHNBzNQ4766Fb0&paipv=0",
@@ -40,11 +40,11 @@ const OurTeam = () => {
     {
       name: "Joshua Oyeyemi",
       position: "Mobile App developer",
-      image: "./images/abdullahi.png",
+      image: "./images/joshua.png",
       links: [
-        "https://www.facebook.com/onisabi.abdullahi/",
-        "https://twitter.com/Abdullahioni2",
-        "https://www.linkedin.com/in/onisabi-abdullahi-577313184/",
+        "https://www.facebook.com/oyeyemi.joshua.9",
+        "https://twitter.com/chemtech_97",
+        "https://www.linkedin.com/in/joshua-oyeyemi-197727243",
       ],
       website: "https://onisabi-portfolio.netlify.app",
     },
@@ -60,6 +60,7 @@ const OurTeam = () => {
       website: "https://onisabi-portfolio.netlify.app",
     },
   ];
+
   return (
     <Wrapper className="container ">
       <h1 className="title">Our team</h1>

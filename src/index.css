@@ -162,12 +162,7 @@ li {
   max-width: var(--maxWidth);
   margin: auto;
 }
-.nav {
-  background-color: var(--primary-800);
-  color: var(--grey-100);
-  /* background-color: var(--grey-400); */
-  /* color: var(--primary-900); */
-}
+
 svg {
   font-size: 1.5rem;
 }

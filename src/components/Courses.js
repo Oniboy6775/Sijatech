@@ -10,16 +10,19 @@ const Courses = () => {
       name: "HTML",
       list: ["Introduction to HTML", "HTML5 layout"],
       icon: <AiFillHtml5 />,
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
       name: "CSS",
       list: ["Introduction to CSS", "CSS3 layout"],
       icon: <DiCss3 />,
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
       name: "JavaScript",
       list: ["Introduction to JavaScript", "JavaScript fundamentals"],
       icon: <DiJavascript1 />,
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
       name: "React",
@@ -30,6 +33,7 @@ const Courses = () => {
         "React state management",
       ],
       icon: <DiReact />,
+      link: "https://reactjs.org/docs/getting-started.html",
     },
     {
       name: "Node & Express Js",
@@ -40,6 +44,7 @@ const Courses = () => {
         "Restful API",
       ],
       icon: <FaNode />,
+      link: "https://nodejs.org/en/docs/",
     },
     {
       name: "Mobile App development",
@@ -50,19 +55,20 @@ const Courses = () => {
         "Push notification",
       ],
       icon: <FaApple />,
+      link: "https://reactnative.dev/",
     },
   ];
+  const redirectLink = (link) => {
+    return window.open(link, "_blank");
+  };
   return (
     <Wrapper className="container">
       <h2 className="title">Available courses</h2>
       <div className="title-underline"></div>
-      {/* <div className="stripe"> */}
-      {/* <h1 className="title">SijaTech</h1>
-        <h1 className="title">SijaTech</h1> */}
-      {/* </div> */}
+
       <div className="courses  row">
         {courses.map((course, index) => {
-          const { icon, list, name } = course;
+          const { icon, list, name, link } = course;
           return (
             <div className="course col" key={index}>
               <div className="course__icon center">{icon}</div>
@@ -76,7 +82,12 @@ const Courses = () => {
                   </p>
                 ))}
               </div>
-              <button className="btn btn-block">More</button>
+              <button
+                onClick={() => redirectLink(link)}
+                className="btn btn-block"
+              >
+                More
+              </button>
             </div>
           );
         })}

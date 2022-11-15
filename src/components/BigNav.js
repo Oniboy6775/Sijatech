@@ -23,10 +23,11 @@ const BigNav = ({ list }) => {
 export default BigNav;
 const Wrapper = styled.ul`
   display: none;
-  color: var(--grey-100);
+  color: var(--primary-800);
   z-index: 10;
   .active {
     border: 1px solid var(--white);
+    color: var(--white) !important;
   }
   .nav__item,
   .nav__link {

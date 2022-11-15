@@ -31,7 +31,7 @@ const OurServices = () => {
         {services.map((service, index) => {
           const { icon, name, text } = service;
           return (
-            <div className="service col">
+            <div className="service col" key={index}>
               <div className="service__icon title">{icon}</div>
               <h3 className="center">{name}</h3>
               <p className="service__text">{text}</p>

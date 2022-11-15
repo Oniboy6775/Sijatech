@@ -20,7 +20,7 @@ const Nav = () => {
     <Wrapper className="nav">
       <nav className="container">
         <div className="logo">
-          <img src={LOGO} alt="logo" width="50px" />
+          <img src={LOGO} alt="logo" width="50px" className="img" />
         </div>
         <div onClick={toggleNav} className="hamburger">
           {isNavOpen ? <FaTimes /> : <BiAlignRight />}
@@ -35,12 +35,20 @@ export default Nav;
 
 const Wrapper = styled.section`
   z-index: 2;
+  background-color: var(--primary-800);
+  color: var(--grey-100);
+  background-color: var(--grey-300);
+  color: var(--primary-800);
+  .logo {
+    width: 40px;
+  }
   nav {
     display: flex;
     padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
   }
+
   @media (min-width: 600px) {
     position: fixed;
     left: 0;
